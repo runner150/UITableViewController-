@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TasksTableViewController.h
 //  UITableViewControllerAssignment
 //
 //  Created by Kyle Ettinger on 6/21/16.
@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tasks.h"
 
-@interface ViewController : UIViewController
+
+@interface TasksTableViewController : UITableViewController
+
+{
+    
+
+    NSMutableArray *_tasks;
+}
+
+
+
 
 
 @end
-

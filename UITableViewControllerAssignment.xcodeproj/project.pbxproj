@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		900E1EF11D19B0CA00C59370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E1EF01D19B0CA00C59370 /* main.m */; };
 		900E1EF41D19B0CA00C59370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E1EF31D19B0CA00C59370 /* AppDelegate.m */; };
-		900E1EF71D19B0CA00C59370 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E1EF61D19B0CA00C59370 /* ViewController.m */; };
 		900E1EFA1D19B0CB00C59370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900E1EF81D19B0CB00C59370 /* Main.storyboard */; };
 		900E1EFC1D19B0CB00C59370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900E1EFB1D19B0CB00C59370 /* Assets.xcassets */; };
 		900E1EFF1D19B0CB00C59370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900E1EFD1D19B0CB00C59370 /* LaunchScreen.storyboard */; };
+		900E1F081D19B21900C59370 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E1F071D19B21900C59370 /* TasksTableViewController.m */; };
+		904EA5901D1B0EB7008A4414 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 904EA58F1D1B0EB7008A4414 /* Tasks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		900E1EF01D19B0CA00C59370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		900E1EF21D19B0CA00C59370 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		900E1EF31D19B0CA00C59370 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		900E1EF51D19B0CA00C59370 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		900E1EF61D19B0CA00C59370 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		900E1EF91D19B0CB00C59370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		900E1EFB1D19B0CB00C59370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		900E1EFE1D19B0CB00C59370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900E1F001D19B0CB00C59370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900E1F061D19B21900C59370 /* TasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
+		900E1F071D19B21900C59370 /* TasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
+		904EA58E1D1B0EB7008A4414 /* Tasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
+		904EA58F1D1B0EB7008A4414 /* Tasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +63,15 @@
 			children = (
 				900E1EF21D19B0CA00C59370 /* AppDelegate.h */,
 				900E1EF31D19B0CA00C59370 /* AppDelegate.m */,
-				900E1EF51D19B0CA00C59370 /* ViewController.h */,
-				900E1EF61D19B0CA00C59370 /* ViewController.m */,
 				900E1EF81D19B0CB00C59370 /* Main.storyboard */,
 				900E1EFB1D19B0CB00C59370 /* Assets.xcassets */,
 				900E1EFD1D19B0CB00C59370 /* LaunchScreen.storyboard */,
 				900E1F001D19B0CB00C59370 /* Info.plist */,
 				900E1EEF1D19B0CA00C59370 /* Supporting Files */,
+				900E1F061D19B21900C59370 /* TasksTableViewController.h */,
+				900E1F071D19B21900C59370 /* TasksTableViewController.m */,
+				904EA58E1D1B0EB7008A4414 /* Tasks.h */,
+				904EA58F1D1B0EB7008A4414 /* Tasks.m */,
 			);
 			path = UITableViewControllerAssignment;
 			sourceTree = "<group>";
@@ -149,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E1EF71D19B0CA00C59370 /* ViewController.m in Sources */,
 				900E1EF41D19B0CA00C59370 /* AppDelegate.m in Sources */,
+				900E1F081D19B21900C59370 /* TasksTableViewController.m in Sources */,
+				904EA5901D1B0EB7008A4414 /* Tasks.m in Sources */,
 				900E1EF11D19B0CA00C59370 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +308,7 @@
 				900E1F051D19B0CB00C59370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
